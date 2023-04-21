@@ -10,6 +10,7 @@ import (
 	"machinemax/mocks"
 )
 
+// I could pull out some functionality into helper functions here
 func TestDevEUIGenerator_GenAndRegisterDevEUI(t *testing.T) {
 	t.Run("If Lorawan registers successfully than deveui is sent to the out channel", func(t *testing.T) {
 		mockLorawan := new(mocks.LoRaWAN)
