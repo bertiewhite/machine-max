@@ -40,7 +40,6 @@ func generateHexString(length int) (string, error) {
 	return string(b), nil
 }
 
-// Needs some tests the important one would be that a failuire to register deveui retries the process
 func (deg *DevEUIGenerator) GenAndRegisterDevEUI() error {
 	for {
 		devEUI, err := generateHexString(5)
